@@ -1,11 +1,11 @@
 ---
 name: warmdreams-project-content
-description: Generate SEO-optimized portfolio project content for WarmDreams Windows & Doors website. Use this skill whenever you need to create project page content (title, meta tags, hero intro, overview, challenge/solution sections) from a brief project summary. The skill generates 2-3 content variations for local SEO, allowing you to pick the best fit for your CMS. Speeds up daily project publishing with consistent, location-optimized copy.
+description: Generate structured, SEO-optimized portfolio project content for WarmDreams Windows & Doors from a brief project summary. Use this skill for individual or batch project-page generation, including project title, hero intro, meta title, meta description, overview, challenge, and solution. Generate 3 meaningfully distinct variations, optimize naturally for local search, preserve supplied project facts, avoid unsupported claims, and minimize factual repetition across and within sections.
 ---
 
 # WarmDreams Project Content Generator
 
-Generate complete, SEO-optimized portfolio content for residential windows and doors projects.
+Generate complete, SEO-optimized portfolio content for residential windows and doors installation projects.
 
 ## What This Skill Does
 
@@ -34,7 +34,7 @@ Provide a brief project summary paragraph containing:
 
 ## Output Format
 
-All content is provided in clean, copy-paste-ready markdown format. You get **2–3 variations** of all content sections, allowing you to choose the version that best fits your brand voice and CMS.
+All content is provided in clean, copy-paste-ready markdown format. You get **3 meaningfully distinct variations** of all content sections, allowing you to choose the version that best fits your brand voice and CMS. Each variation must remain factually consistent with the same project but should differ in framing, emphasis, rhythm, and sentence construction. Do not create variations by merely swapping synonyms or lightly paraphrasing the same copy.
 
 Each variation set includes:
 ```
@@ -66,8 +66,8 @@ Then Variation 2, Variation 3, etc.
 
 ## SEO Principles Applied
 
-- **Location naturally integrated** into all primary content (title, intro, overview)
-- **Local search optimization** — city name featured prominently without awkward keyword stuffing
+- **Location used strategically** — include the city prominently where it benefits local relevance, especially in the Project Title, Meta Title, and Overview. Do not force the city name into every section or repeat it when context is already clear.
+- **Local search optimization** — city name and relevant service terms are used naturally without awkward keyword stuffing
 - **Meta title and description** optimized for click-through from search results
 - **Balance in Challenge/Solution** — sections are similar word counts to work well in side-by-side column layouts
 
@@ -77,6 +77,8 @@ Then Variation 2, Variation 3, etc.
 2. **Hero Intro** — Aim for brevity; evokes the transformation at a glance
 3. **Meta Description** — Pick the version that makes you want to click from search results
 4. **Challenge & Solution** — Prefer versions where both sections feel balanced in depth and detail
+5. **Avoid factual repetition across sections** — Do not repeat the same project facts, product details, homeowner problems, benefits, or outcomes in the Hero Intro, Overview, Challenge, and Solution unless repetition is necessary for clarity. Treat each section as having a distinct purpose and distribute available facts across them.
+6. **Prefer genuinely different variations** — Across Variations 1–3, vary emphasis, structure, and supporting details rather than producing near-duplicate paraphrases.
 
 ## Instructions for Use
 
@@ -84,7 +86,7 @@ Then Variation 2, Variation 3, etc.
 
 **Step 2:** Provide it to Claude with this skill active
 
-**Step 3:** Review the 2-3 variations generated
+**Step 3:** Review the 3 variations generated
 
 **Step 4:** Pick your preferred version from each section, or ask Claude to blend/refine specific sections
 
@@ -99,6 +101,22 @@ Then Variation 2, Variation 3, etc.
 - Professional yet approachable (for homeowners, not industry jargon-heavy)
 - Benefit-focused (emphasize outcomes: comfort, energy savings, aesthetics, durability)
 - Solution-oriented (show how WarmDreams solved the problem)
+
+### Factual Grounding and Information Distribution
+
+**Factual grounding:** Use only project facts provided in the input or established WarmDreams business information explicitly available to the skill. Do not invent product specifications, quantified savings, homeowner feedback, installation conditions, project duration, warranties, or performance outcomes. Reasonable descriptive wording is allowed, but factual claims must remain supported by the source information.
+
+**Fact distribution rule:** Before drafting, identify the available project facts and assign them to sections. Avoid restating the same fact in several sections using slightly different wording. Each section should contribute new information or serve a distinct communication purpose instead of retelling the entire project in progressively shorter forms.
+
+Use the sections this way:
+
+- **Hero Intro** — Summarize the transformation or core value at a glance; avoid detailed facts that belong in the Overview.
+- **Project Overview** — Carry the broad project narrative: property context, scope of work, notable product or design details, and outcome.
+- **Challenge** — Isolate the single most important client problem or project constraint.
+- **Solution** — Explain the intervention that directly addresses the Challenge; maintain logical correspondence without repeating the Challenge in different words.
+- **Meta Title / Description** — Summarize for search intent and click-through; some overlap with page content is acceptable because these are search-result elements, but avoid unnecessary repetition within the visible page copy.
+
+**Variation diversity rule:** Preserve factual accuracy across all 3 variations, but vary what is foregrounded, how the story is structured, and the sentence patterns used. When the input contains enough distinct facts, distribute different supporting details across variations. Do not manufacture new facts merely to make variations different.
 
 ### Word Targets
 
